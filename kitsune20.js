@@ -3440,7 +3440,7 @@ var cf = navigator.userAgent
 };
 cf.includes("GT-I9300") && cf.includes("Chrome");
 var lf = function() {
-    return df.Ca.includes("/logos/") && df.Ca.includes(".html")
+    return df.Ca.includes("") && df.Ca.includes(".html")
 }
   , nf = function() {
     return !!document.getElementById("fkbx") || mf()
