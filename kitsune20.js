@@ -2941,8 +2941,10 @@ var cf = navigator.userAgent,
     };
 cf.includes("GT-I9300") && cf.includes("Chrome");
 var lf = function() {
-		/* Gameblabla - Fullscreen hack*/
-        return df.Ca.includes("") && df.Ca.includes(".html")
+		/* Gameblabla - Fullscreen hack */
+		/* Change it to 0 for windowed mode */
+        //return df.Ca.includes("") && df.Ca.includes(".html")
+        return 1
     },
     nf = function() {
         return !!document.getElementById("fkbx") || mf()
