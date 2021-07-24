@@ -1,8 +1,6 @@
 This is an offline backup copy of the Doodle Champion Island Games by google and 4studios.
 
-Right now, it does work but has an issue with fullscreen that won't work (it stays in windowed mode instead).
-
-The game has been modified to forcefully load the english text.
+The game has been modified to forcefully load the english text and force fullscreen as well.
 
 On Firefox, you can just open the kitsune20.html (you may have to change a setting for that though).
 On Chromium and other web browsers, you will need to host your own HTTP server.
