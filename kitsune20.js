@@ -3817,6 +3817,7 @@ yh.prototype.load = function(b, g, m, k) {
     var c = this;
     b = zh(this, b, g, m);
     if (null == b) return Promise.resolve();
+    /* Gameblabla - Change according to your language */
     var a = k + "messages.en.nocache.json"
         n = new ae;
     n.HQ = "text";
