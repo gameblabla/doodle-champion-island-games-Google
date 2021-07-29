@@ -16,7 +16,17 @@
   }
 </script>
 <style>
-	#hplogo {
+canvas 
+{
+	image-rendering: optimizeSpeed;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -o-crisp-edges;
+	image-rendering: pixelated;
+	-ms-interpolation-mode: nearest-neighbor;
+}
+#hplogo
+{
     height: 216px;
     outline: none;
     overflow: hidden;
@@ -26,6 +36,12 @@
     -ms-user-select: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none
+	image-rendering: optimizeSpeed;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -o-crisp-edges;
+	image-rendering: pixelated;
+	-ms-interpolation-mode: nearest-neighbor;
 }
 
 #sdoodles,
@@ -69,7 +85,14 @@
     background-color: transparent;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+	image-rendering: optimizeSpeed;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -o-crisp-edges;
+	image-rendering: pixelated;
+	-ms-interpolation-mode: nearest-neighbor;
+	background-color: white;
 }
 
 .hpcta-marathon {
@@ -189,12 +212,14 @@
 @font-face {
     font-family: 'PixelMplus10';
     src: url('PixelMplus10-Regular.ttf')
+	font-smooth: never;
+	-webkit-font-smoothing : none;
 }
 </style>
 <!-- find.foo/letsplayagame21 -->
 <div id="hplogo">
 	<div id="hplogo2" role="region" tabindex="0" dir="{{LANGUAGE_DIRECTION}}"aria-controls="hplogoaria" aria-label="{{ARIA_LABEL}}">
-	<div id='hplogovideo'></div><canvas id="hpcanvas" width=960 height=540 dir="{{LANGUAGE_DIRECTION}}">
+	<div id='hplogovideo'></div><canvas id="hpcanvas" width=960 height=540 dir="{{LANGUAGE_DIRECTION}}" moz-opaque>
 	</canvas><div role="region" id="hplogoaria" aria-live="assertive"></div>
 	<div id="hplogogamearia" aria-live="polite">
 	</div></div>
