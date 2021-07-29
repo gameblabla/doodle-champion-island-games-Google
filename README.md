@@ -11,6 +11,8 @@ you can do so here :
 
 https://gameblabla.github.io/doodle-champion-island-games-Google/
 
+I would like to thank @potherca-blog for some of his interesting changes :P
+
 
 Playing the game offline
 =========================
