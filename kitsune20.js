@@ -2605,7 +2605,8 @@ Ee.prototype.Bb = function() {
             b.Ca ? k() : b.kb.push(k)
         });
     if (0 != this.ha) return Promise.resolve();
-    if (!this.Sc) return Promise.reject("Must call Audio.init before preloading audio.");
+    //if (!this.Sc) return Promise.reject("Must call Audio.init before preloading audio.");
+    if (!this.Sc) return Promise.resolve();
     var m = new XMLHttpRequest;
     m.open("GET", this.oc, !0);
     m.responseType = "arraybuffer";
