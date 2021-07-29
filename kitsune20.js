@@ -3814,27 +3814,25 @@ var xh = function(b) {
 var yh = function() {
     this.ha = this.Ca = null
 };
-yh.prototype.load = function(b, g, m, k) {
-    var c = this;
-    b = zh(this, b, g, m);
-    if (null == b) return Promise.resolve();
-    /* Gameblabla - Change according to your language */
-    var a = k + "messages.en.nocache.json"
-        n = new ae;
-    n.HQ = "text";
-    return new Promise(function(h, d) {
-        Hc(n, "success", function() {
-            try {
-                var e = n.ha ? n.ha.responseText : ""
-            } catch (f) {
-                e = ""
-            }
-            c.Ca = JSON.parse(e.substring(5));
-            h()
-        });
-        Hc(n, "error", d);
-        ee(n, a)
-    })
+yh.prototype.load = function (b, g, m, k) {
+  var c = this;
+  b = zh(this, b, g, m);
+  if (null == b) return Promise.resolve();
+  var a = k + "messages." + b + ".nocache.json", n = new ae;
+  n.HQ = "text";
+  return new Promise(function (h, d) {
+    Hc(n, "success", function () {
+      try {
+        var e = n.ha ? n.ha.responseText : ""
+      } catch (f) {
+        e = ""
+      }
+      c.Ca = JSON.parse(e.substring(5));
+      h()
+    });
+    Hc(n, "error", d);
+    ee(n, a)
+  })
 };
 var zh = function(b, g, m, k) {
     var c = g + "-" + m;
